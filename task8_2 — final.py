@@ -20,10 +20,10 @@ if __name__ == '__main__':
 
     def launch(user_path):
         path_to_file = Path(user_path)
-        token = ''
+        token = 'INSERT YOUR TOKEN'
         uploader = YaUploader(token)
         # print(path_to_file.name)
-        name_to_disk = 'test/'+ path_to_file.name
+        name_to_disk = path_to_file.name
         uploader.upload(name_to_disk, path_to_file)
 
-launch('C:\Books\Фрэнк Саммерс - за пределами самости.txt')
+launch('C:\Books\Фрэнк Саммерс - за пределами самости.txt') #введите адрес файла, который будете отправлять
